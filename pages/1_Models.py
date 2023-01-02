@@ -5,7 +5,7 @@ helpers.add_logo()
 
 st.title("Models")
 st.write("Build text analytics models with highest performance and lowest effort.")
-new_model = st.button("Create a new model")
+new_model = st.button("Create a new model", type="primary")
 
 
 selected_model = st.selectbox(
