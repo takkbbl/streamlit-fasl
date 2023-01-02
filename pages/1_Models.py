@@ -4,12 +4,9 @@ import helpers as helpers
 helpers.add_logo()
 
 st.title("Models")
-st.write("Build text analytics models with highest performance and lowest effort.")
-new_model = st.button("Create a new model", type="primary")
-
 
 selected_model = st.selectbox(
-    'or select your model from the list',
+    'Select your model from the list',
     ('Model 1', 'Model 2', 'Model 3'))
 
 #else:

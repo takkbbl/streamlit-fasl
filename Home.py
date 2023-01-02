@@ -15,6 +15,11 @@ st.write("Symanto Brain allows a deep "
          "the world (e.g., I would like Lady Gaga's job).")
 
 
-if st.button("Get started", type="primary"):
+if st.button("Create your first model", type="primary"):
+    switch_page("Create new")
+
+st.write("or...")
+
+if st.button("Browse existing models", type="secondary"):
     switch_page("Models")
 
