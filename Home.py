@@ -1,5 +1,6 @@
 import streamlit as st
 import helpers as helpers
+from streamlit_extras.switch_page_button import switch_page
 
 helpers.add_logo()
 
@@ -14,5 +15,6 @@ st.write("Symanto Brain allows a deep "
          "the world (e.g., I would like Lady Gaga's job).")
 
 
-
+if st.button("Get started"):
+    switch_page("Models")
 

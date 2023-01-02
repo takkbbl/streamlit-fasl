@@ -1,11 +1,10 @@
 import streamlit as st
 import helpers as helpers
-from streamlit_extras.switch_page_button import switch_page
-
 
 helpers.add_logo()
 
 st.title("Models")
+st.write("Build text analytics models with highest performance and lowest effort.")
 new_model = st.button("Create a new model")
 
 
@@ -46,7 +45,7 @@ with tab4:
     if deployment_type == "Demo":
         st.text_input("Insert a sample text", value="This text will be classified by the model")
     elif deployment_type == "File":
-        st.file_uploader("Choose a file")
+        run_file = st.file_uploader("Choose a file", key="unique")
     else:
         st.markdown("**Please note:** Replace *FASL_API_KEY* with your subscription key.")
         st.code("curl -X 'POST'   \n    'https://api.symanto.net/active-learning/v2/26/predict'   \n    -H 'accept: application/json' "
