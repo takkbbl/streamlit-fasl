@@ -1,6 +1,11 @@
 import streamlit as st
 import helpers as helpers
 
+st.set_page_config(
+        page_title="Symanto Active Few-Shot Learning",
+        page_icon="https://developer.symanto.com/favicon.ico",
+    )
+
 helpers.add_logo()
 
 st.title("Help")

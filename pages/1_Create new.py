@@ -2,6 +2,11 @@ import streamlit as st
 import helpers as helpers
 from streamlit_extras.switch_page_button import switch_page
 
+st.set_page_config(
+        page_title="Symanto Active Few-Shot Learning",
+        page_icon="https://developer.symanto.com/favicon.ico",
+    )
+
 helpers.add_logo()
 
 st.title("Create new model")
